@@ -33,13 +33,16 @@ export function HeroSection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
-              <Link to="/dashboard">
+              <Link to="/demo">
                 Ver Demonstração
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
-            <Button variant="glass" size="xl" className="w-full sm:w-auto">
-              Contratar
+
+            <Button variant="glass" size="xl" className="w-full sm:w-auto" asChild>
+              <Link to="/plans">
+                Contratar
+              </Link>
             </Button>
           </div>
 
