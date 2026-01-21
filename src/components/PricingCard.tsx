@@ -72,7 +72,7 @@ const PricingCard = ({ name, price, description, features, featured = false, del
       </ul>
 
       <Button
-        variant={featured ? "featured" : "outline"}
+        variant={featured ? "default" : "outline"}
         size="lg"
         className="w-full"
       >

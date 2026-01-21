@@ -1,5 +1,5 @@
 export type Sentiment = "positive" | "neutral" | "negative";
-export type Source = "google" | "facebook" | "instagram" | "twitter" | "email" | "whatsapp" | "reclameaqui";
+export type Source = "google" | "facebook" | "instagram" | "email" | "whatsapp" ;
 
 export interface Feedback {
   id: string;
@@ -48,16 +48,7 @@ export const mockFeedbacks: Feedback[] = [
     responded: true,
     category: "Produto",
   },
-  {
-    id: "4",
-    source: "twitter",
-    author: "@carlostech",
-    content: "O app tá travando muito ultimamente. Alguém mais com esse problema?",
-    sentiment: "negative",
-    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 8),
-    responded: false,
-    category: "Técnico",
-  },
+  
   {
     id: "5",
     source: "email",
@@ -68,17 +59,7 @@ export const mockFeedbacks: Feedback[] = [
     responded: true,
     category: "Dúvida",
   },
-  {
-    id: "6",
-    source: "reclameaqui",
-    author: "Lucia Mendes",
-    content: "PÉSSIMO! Comprei um produto e nunca chegou. Quero meu dinheiro de volta!",
-    sentiment: "negative",
-    rating: 1,
-    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 24),
-    responded: false,
-    category: "Entrega",
-  },
+
   {
     id: "7",
     source: "whatsapp",
@@ -106,10 +87,8 @@ export const sourceConfig: Record<Source, { label: string; color: string; bgColo
   google: { label: "Google", color: "text-blue-400", bgColor: "bg-blue-500/20" },
   facebook: { label: "Facebook", color: "text-blue-500", bgColor: "bg-blue-600/20" },
   instagram: { label: "Instagram", color: "text-pink-400", bgColor: "bg-pink-500/20" },
-  twitter: { label: "Twitter/X", color: "text-slate-400", bgColor: "bg-slate-500/20" },
   email: { label: "Email", color: "text-amber-400", bgColor: "bg-amber-500/20" },
   whatsapp: { label: "WhatsApp", color: "text-emerald-400", bgColor: "bg-emerald-500/20" },
-  reclameaqui: { label: "Reclame Aqui", color: "text-orange-400", bgColor: "bg-orange-500/20" },
 };
 
 export const sentimentConfig: Record<Sentiment, { label: string; color: string; bgColor: string }> = {
