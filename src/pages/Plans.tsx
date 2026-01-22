@@ -5,10 +5,10 @@ import IntegrationBadge from "@/components/IntegrationBadge";
 const plans = [
   {
     name: "Básico",
-    price: "19,90",
+    price: "Teste Grátis",
     description: "Ideal para otimizar o seu atendimento ao cliente",
     features: [
-      "Até 500 feedbacks/mês",
+      "Até 50 feedbacks/mês",
       "1 widget de feedback",
       "Dashboard básico",
       "Suporte por email",
@@ -20,7 +20,7 @@ const plans = [
     price: "49,90",
     description: "Alavanque seu negócio com insights avançados",
     features: [
-      "Até 5.000 feedbacks/mês",
+      "Até 500 feedbacks/mês",
       "Widgets ilimitados",
       "Integração com 4 redes",
       "Dashboard avançado com analytics",
@@ -48,9 +48,6 @@ const plans = [
 
 const integrations = [
   { icon: Instagram, name: "Instagram" },
-  { icon: Twitter, name: "Twitter/X" },
-  { icon: Facebook, name: "Facebook" },
-  { icon: Linkedin, name: "LinkedIn" },
   { icon: Globe, name: "Website" },
   { icon: MessageSquare, name: "WhatsApp" },
 ];
@@ -169,7 +166,7 @@ const Plans = () => {
         {/* Footer */}
         <footer className="py-8 px-4 border-t border-border">
           <div className="container mx-auto text-center text-sm text-muted-foreground">
-            <p>© 2025 FeedbackHub. Todos os direitos reservados.</p>
+            <p>© 2026 FeedbackHub. Todos os direitos reservados.</p>
           </div>
         </footer>
       </div>
