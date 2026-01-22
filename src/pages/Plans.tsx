@@ -10,7 +10,6 @@ const plans = [
     features: [
       "Até 500 feedbacks/mês",
       "1 widget de feedback",
-      "Integração com 2 redes",
       "Dashboard básico",
       "Suporte por email",
       "Relatórios semanais",
